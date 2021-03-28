@@ -1,0 +1,22 @@
+.jaded-nav{
+    background-color: #E09F94;
+}
+
+.jade-nav-content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.jaded-icon{
+    flex: 1;
+    text-align: center;
+}
+
+.home{
+    color: white;
+}
+
+.home-icon{
+    font-size: 3em;
+}
