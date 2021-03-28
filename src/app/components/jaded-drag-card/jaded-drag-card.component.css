@@ -1,0 +1,30 @@
+.jaded-card-header-controls{
+    display: flex;
+    flex-direction: row;
+    padding:1.5em;
+    border-bottom: 5px solid #E09F94;
+}
+
+.jaded-card-header-controls:hover{
+    cursor: move;
+}
+
+.jaded-card-content{
+    background-color: white;
+}
+
+.jaded-card-footer{
+    border-top: 5px solid #E09F94;
+}
+
+.jaded-card-small{
+    width:25%;
+}
+
+.jaded-card-medium{
+    width:50%;
+}
+
+.jaded-card-large{
+    width:100%;
+}

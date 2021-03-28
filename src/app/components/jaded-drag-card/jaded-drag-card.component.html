@@ -1,3 +1,20 @@
-<div>
-    <ng-content></ng-content>
+<div [ngClass]="{
+    'jaded-card':true,
+    'jaded-border':true,
+    'jaded-background':true,
+    'jaded-card-small': size === 'small',
+    'jaded-card-medium': size === 'medium',
+    'jaded-card-large': size === 'large'
+    }" cdkDrag>
+    <div #cardHeader class="jaded-card-header-controls" cdkDragHandle>
+        <div class="header">
+            {{cardHeaderText}}
+        </div>
+    </div>
+    <div class="jaded-card-content">
+        <ng-content></ng-content>
+    </div>
+    <div class="jaded-card-footer" [ngStyle]="footerStyles">
+        
+    </div>
 </div>

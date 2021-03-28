@@ -1,7 +1,20 @@
-<p>home-page works!</p>
-<app-jaded-button buttonText="Gallery" (clicked)="galleryClicked($event)"></app-jaded-button>
-<app-jaded-drag-card>
+<div class="home-section" aria-label="home section">
     <div>
-        some content
+        <div>
+            <app-jaded-drag-card [cardHeaderText]="'WELCOME.PNG'" size="small">
+                <div>
+                    some content
+                </div>
+                <div>
+                    some content
+                </div>
+                <div>
+                    some content
+                </div>
+            </app-jaded-drag-card>
+        </div>
     </div>
-</app-jaded-drag-card>
+    <div>
+        <app-jaded-button buttonText="Gallery" (clicked)="galleryClicked($event)"></app-jaded-button>
+    </div>
+</div>
