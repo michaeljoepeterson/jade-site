@@ -7,8 +7,19 @@
     'jaded-card-large': size === 'large'
     }" cdkDrag>
     <div #cardHeader class="jaded-card-header-controls" cdkDragHandle>
-        <div class="header">
+        <div class="header jaded-text">
             {{cardHeaderText}}
+        </div>
+        <div class="controls">
+            <app-jaded-icon-button>
+                <mat-icon>minimize</mat-icon>
+            </app-jaded-icon-button>
+            <app-jaded-icon-button>
+                <mat-icon>crop_square</mat-icon>
+            </app-jaded-icon-button>
+            <app-jaded-icon-button>
+                <mat-icon>close</mat-icon>
+            </app-jaded-icon-button>
         </div>
     </div>
     <div class="jaded-card-content">

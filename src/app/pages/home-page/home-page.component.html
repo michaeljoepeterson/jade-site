@@ -1,20 +1,14 @@
-<div class="home-section" aria-label="home section">
-    <div>
+<div class="home-section row" aria-label="home section">
+    <div class="col-lg-6 col-md-12">
         <div>
-            <app-jaded-drag-card [cardHeaderText]="'WELCOME.PNG'" size="small">
+            <app-jaded-drag-card [cardHeaderText]="'WELCOME.PNG'" size="medium">
                 <div>
-                    some content
-                </div>
-                <div>
-                    some content
-                </div>
-                <div>
-                    some content
+                    <img class="jaded-img" src="assets/illustrations/Plant_palette.png">
                 </div>
             </app-jaded-drag-card>
         </div>
     </div>
-    <div>
+    <div class="col-lg-6 col-md-12">
         <app-jaded-button buttonText="Gallery" (clicked)="galleryClicked($event)"></app-jaded-button>
     </div>
 </div>

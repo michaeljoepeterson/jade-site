@@ -1,0 +1,15 @@
+.jaded-button-border{
+    border-radius: 10% !important;
+    border: 3px solid #E09F94 !important;
+}
+
+.jaded-icon-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E09F94;
+}
+
+.jaded-icon-background{
+    background-color: #FFFFFF;
+}

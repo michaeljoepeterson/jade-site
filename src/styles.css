@@ -3,11 +3,22 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+.jaded-border-color,.jaded-border{
+    border: 5px solid #E09F94 !important;
+}
+
 .jaded-border{
-    border: 5px solid #E09F94;
     border-radius: 20px;
 }
 
 .jaded-background{
     background-color: #F5EEF6;
+}
+
+.jaded-img{
+    width:100%;
+}
+
+.jaded-text{
+    color: #E09F94;
 }

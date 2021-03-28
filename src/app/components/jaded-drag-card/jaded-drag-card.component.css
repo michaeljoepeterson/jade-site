@@ -3,6 +3,8 @@
     flex-direction: row;
     padding:1.5em;
     border-bottom: 5px solid #E09F94;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .jaded-card-header-controls:hover{
@@ -27,4 +29,22 @@
 
 .jaded-card-large{
     width:100%;
+}
+
+.controls{
+    display: flex;
+}
+
+.controls > *{
+    margin-right: 5px;
+}
+
+@media (max-width: 1080px) {
+    .jaded-card-small{
+        width:100%;
+    }
+    
+    .jaded-card-medium{
+        width:100%;
+    }
 }
