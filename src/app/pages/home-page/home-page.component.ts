@@ -12,4 +12,7 @@ export class HomePageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  galleryClicked(event:any){
+    console.log(event);
+  }
 }

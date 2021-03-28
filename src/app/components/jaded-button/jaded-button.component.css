@@ -1,0 +1,26 @@
+.jaded-btn{
+    background-color: #F5EEF6;
+    color: #E09F94;
+    border: 5px solid #E09F94;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5em;
+    transition: all 400ms;
+}
+
+.jaded-btn:hover{
+    background-color: #3C7152 ;
+    color: #FFFFFF;
+    border: 5px solid #FFFFFF;
+    box-shadow: 0px 3px 6px #00000029;
+    font-size: 1.2em;
+}
+
+.btn-text{
+    font-size: 2em;
+    padding: 1em;
+}
+
+/* .jaded-btn:hover > .btn-text{
+    margin-right: 1em;
+    margin-left: 0;
+} */

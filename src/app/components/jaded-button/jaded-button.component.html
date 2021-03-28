@@ -1,1 +1,6 @@
-<p>jaded-button works!</p>
+<button matRipple class="jaded-btn" [ngStyle]="customStyles" (click)="buttonClicked($event)">
+    <span class='btn-text'>
+        {{buttonText}}
+    </span>
+    <ng-content></ng-content>
+</button>
