@@ -15,6 +15,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatRippleModule } from '@angular/material/core';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { JadedIconButtonComponent } from './components/jaded-icon-button/jaded-icon-button.component';
+import { DetailsPageComponent } from './pages/details-page/details-page.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { JadedIconButtonComponent } from './components/jaded-icon-button/jaded-i
     JadedDragCardComponent,
     NavbarComponent,
     FooterComponent,
-    JadedIconButtonComponent
+    JadedIconButtonComponent,
+    DetailsPageComponent
   ],
   imports: [
     BrowserModule,
