@@ -11,14 +11,16 @@
         </div>
         <div class="col-lg-6 col-md-12">
             <div class='button-container'>
-                <app-jaded-button buttonText="About" (clicked)="galleryClicked($event)"></app-jaded-button>
+                <!-- <a href="#about" >
+                </a> -->
+                <app-jaded-button buttonText="About" (clicked)="aboutClicked($event)"></app-jaded-button>
             </div>
             <div class='button-container'>
                 <app-jaded-button buttonText="Gallery" (clicked)="galleryClicked($event)"></app-jaded-button>
             </div>
         </div>
     </div>
-    <div class="row home-section justify-content-center">
+    <div class="row home-section justify-content-center" id="about">
         <div class="col-lg-4 col-md-12">
             <app-jaded-drag-card [cardHeaderText]="'WELCOME.PNG'" size="large">
                 <div>

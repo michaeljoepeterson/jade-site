@@ -14,7 +14,6 @@ export class AppComponent {
   title = 'jaded';
 
   prepareRoute(outlet: RouterOutlet) {
-    console.log(outlet.activatedRouteData);
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
   }
 }

@@ -47,4 +47,8 @@
     .jaded-card-medium{
         width:100%;
     }
+
+    .jaded-card{
+        width: 100% !important;
+    }
 }

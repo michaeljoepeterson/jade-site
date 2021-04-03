@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit  } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,14 +10,18 @@ import { Router } from '@angular/router';
 export class HomePageComponent implements OnInit {
 
   constructor(
-    private router:Router
+    private router:Router,
+    private viewportScroller: ViewportScroller
   ) { }
 
   ngOnInit(): void {
   }
 
   galleryClicked(event:any){
-    console.log(event);
     this.router.navigate(['/posters']);
+  }
+
+  aboutClicked(event:any){
+    this.viewportScroller.scrollToAnchor('about');
   }
 }
