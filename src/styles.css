@@ -22,3 +22,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .jaded-text{
     color: #E09F94;
 }
+
+.jaded-para{
+    margin: 0;
+}
+
+.text-container{
+    padding: 1em;
+}

@@ -5,7 +5,7 @@
     'jaded-card-small': size === 'small',
     'jaded-card-medium': size === 'medium',
     'jaded-card-large': size === 'large'
-    }" cdkDrag>
+    }" cdkDrag [ngStyle]="customStyles">
     <div #cardHeader class="jaded-card-header-controls" cdkDragHandle>
         <div class="header jaded-text">
             {{cardHeaderText}}

@@ -13,7 +13,10 @@ import {
 export const swipe =
   trigger('routeAnimations', [
     transition('leftSwipe => rightSwipe', [
-      style({ position: 'relative' }),
+      style({ 
+        position: 'relative',
+        overflow:'inherit'
+      }),
       query(':enter, :leave', [
         style({
           position: 'absolute',
@@ -38,7 +41,10 @@ export const swipe =
       query(':enter', animateChild()),
     ]),
     transition('rightSwipe => leftSwipe', [
-      style({ position: 'relative' }),
+      style({ 
+        position: 'relative',
+        overflow:'inherit'
+      }),
       query(':enter, :leave', [
         style({
           position: 'absolute',

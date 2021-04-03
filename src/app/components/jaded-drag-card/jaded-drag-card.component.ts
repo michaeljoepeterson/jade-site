@@ -8,7 +8,7 @@ import { ChangeDetectorRef, Component, ElementRef, HostListener, Input, OnInit, 
 export class JadedDragCardComponent implements OnInit {
   @Input() cardHeaderText:string = "";
   @Input() size:string = "";
-
+  @Input() customStyles:any = {};
   @ViewChild('cardHeader') cardHeaderRef: ElementRef;
 
   @HostListener("window:resize",["event"])
