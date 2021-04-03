@@ -1,4 +1,9 @@
 .main-content{
     padding: 1em;
     overflow-x: hidden;
+    margin-top: 10em;
+}
+
+.animate{
+    margin-top: 3.4em;
 }

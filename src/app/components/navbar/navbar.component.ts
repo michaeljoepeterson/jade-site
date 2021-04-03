@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AnimateService } from '../../services/animate.service';
 
 @Component({
   selector: 'app-navbar',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  isAnimate:boolean = false;
 
-  constructor() { }
+  constructor(
+    private animate:AnimateService
+  ) { }
 
   ngOnInit(): void {
+    this.animate.routeChange.subscribe(animateStart => {
+      this.isAnimate = animateStart;
+    });
   }
 
+  onAnimate(event:any){
+    console.log(event);
+  }
 }

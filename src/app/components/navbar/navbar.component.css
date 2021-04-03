@@ -1,5 +1,7 @@
 .jaded-nav{
     background-color: #E09F94;
+    transition: 500ms all;
+    opacity: 1;
 }
 
 .jade-nav-content{
@@ -20,4 +22,9 @@
 
 .home-icon{
     font-size: 3em;
+}
+
+.animate-nav{
+    position: initial !important;
+    opacity: 0;
 }

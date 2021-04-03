@@ -1,6 +1,9 @@
 <div>
   <app-navbar></app-navbar>
-  <main class="main-content" [@routeAnimations]="prepareRoute(outlet)">
+  <main [ngClass]="{
+    'main-content':true,
+    'animate':isAnimate
+  }" [@routeAnimations]="prepareRoute(outlet)" (@routeAnimations.start)="onAnimateStart($event)" (@routeAnimations.done)="onAnimateEnd($event)">
     <router-outlet #outlet="outlet"></router-outlet>
   </main>
 </div>

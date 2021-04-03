@@ -1,6 +1,6 @@
 <div class="home-section" aria-label="home section">
     <div class="home-section row">
-        <div class="col-lg-6 col-md-12">
+        <div class="col-lg-6 col-md-12 drag-container">
             <div>
                 <app-jaded-drag-card [cardHeaderText]="'WELCOME.PNG'" size="medium">
                     <div>
@@ -9,7 +9,7 @@
                 </app-jaded-drag-card>
             </div>
         </div>
-        <div class="col-lg-6 col-md-12">
+        <div class="col-lg-6 col-md-12 drag-container">
             <div class='button-container'>
                 <!-- <a href="#about" >
                 </a> -->
@@ -20,15 +20,15 @@
             </div>
         </div>
     </div>
-    <div class="row home-section justify-content-center" id="about">
-        <div class="col-lg-4 col-md-12">
+    <div class="row home-section inner-home-section" id="about">
+        <div class="col-lg-4 col-md-12 drag-container">
             <app-jaded-drag-card [cardHeaderText]="'WELCOME.PNG'" size="large">
                 <div>
                     <img class="jaded-img" src="assets/about/About_Correct_Colour.png">
                 </div>
             </app-jaded-drag-card>
         </div>
-        <div class="col-lg-8 col-md-12">
+        <div class="col-lg-8 col-md-12 drag-container">
             <app-jaded-drag-card [cardHeaderText]="'WELCOME.PNG'" size="large" [customStyles]="{
                 'width':'75%',
                 'margin':'auto'
