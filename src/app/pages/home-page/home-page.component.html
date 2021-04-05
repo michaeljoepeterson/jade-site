@@ -2,7 +2,10 @@
     <div class="home-section row">
         <div class="col-lg-6 col-md-12 drag-container">
             <div>
-                <app-jaded-drag-card [cardHeaderText]="'WELCOME.PNG'" size="medium">
+                <app-jaded-drag-card [cardHeaderText]="'WELCOME.PNG'" [customStyles]="{
+                    'width':'65%',
+                    'margin':'auto'
+                }">
                     <div>
                         <img class="jaded-img" src="assets/illustrations/Plant_palette.png">
                     </div>
@@ -11,8 +14,6 @@
         </div>
         <div class="col-lg-6 col-md-12 drag-container">
             <div class='button-container'>
-                <!-- <a href="#about" >
-                </a> -->
                 <app-jaded-button buttonText="About" (clicked)="aboutClicked($event)"></app-jaded-button>
             </div>
             <div class='button-container'>
@@ -31,13 +32,33 @@
                 </div>
             </app-jaded-drag-card>
         </div>
-        <div class="col-lg-8 col-md-12">
+        <div class="col-lg-8 col-md-12 inner-row">
             <app-jaded-drag-card [cardHeaderText]="'WELCOME.PNG'" [cardClasses]="{
                 'card':true,
                 'welcome-card':true
             }">
                 <div class="text-container">
                     <p class="jaded-para">Hi I'm Jade</p>
+                </div>
+            </app-jaded-drag-card>
+        </div>
+        <div class="col-lg-4 col-md-12 inner-row">
+            <app-jaded-drag-card [cardHeaderText]="'THANK YOU'" size="large" [cardClasses]="{
+                'card':true,
+                'thank-card':true
+            }">
+                <div class="text-container">
+                    <p class="jaded-para">For visiting my portfolio</p>
+                </div>
+            </app-jaded-drag-card>
+        </div>
+        <div class="col-lg-8 col-md-12 inner-row">
+            <app-jaded-drag-card [cardHeaderText]="'PORTRAIT.PNG'" [cardClasses]="{
+                'card':true,
+                'portrait-card':true
+            }">
+                <div>
+                    <img class="jaded-img" src="assets/about/Jade.png">
                 </div>
             </app-jaded-drag-card>
         </div>

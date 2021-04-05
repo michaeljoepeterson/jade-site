@@ -8,7 +8,11 @@
 }
 
 .inner-home-section{
-    padding-top: 10em;
+    padding-top: 8em;
+}
+
+.inner-row{
+    padding-top: 5em;
 }
 
 ::ng-deep .card{
@@ -19,9 +23,19 @@
     left:4em;
 }
 
+::ng-deep .thank-card{
+    left:6em;
+}
+
 ::ng-deep .welcome-card{
     width:75%;
     margin:auto;
+}
+
+::ng-deep .portrait-card{
+    width:50%;
+    margin:auto;
+    top:-17em;
 }
 
 @media (max-width: 1080px) {
