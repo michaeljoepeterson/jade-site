@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { AnimateService } from '../../services/animate.service';
 
 @Component({
@@ -8,18 +9,28 @@ import { AnimateService } from '../../services/animate.service';
 })
 export class NavbarComponent implements OnInit {
   isAnimate:boolean = false;
+  animateSub:Subscription;
 
   constructor(
     private animate:AnimateService
   ) { }
 
   ngOnInit(): void {
-    this.animate.routeChange.subscribe(animateStart => {
+    this.animateSub = this.animate.routeChange.subscribe(animateStart => {
       this.isAnimate = animateStart;
     });
   }
 
   onAnimate(event:any){
     console.log(event);
+  }
+
+  ngOnDestroy(){
+    try{
+      this.animateSub.unsubscribe();
+    }
+    catch(e){
+
+    }
   }
 }

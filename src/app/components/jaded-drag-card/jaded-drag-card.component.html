@@ -1,11 +1,4 @@
-<div [ngClass]="{
-    'jaded-card':true,
-    'jaded-border':true,
-    'jaded-background':true,
-    'jaded-card-small': size === 'small',
-    'jaded-card-medium': size === 'medium',
-    'jaded-card-large': size === 'large'
-    }" cdkDrag [ngStyle]="customStyles">
+<div [ngClass]="cardClasses" cdkDrag [ngStyle]="customStyles">
     <div #cardHeader class="jaded-card-header-controls" cdkDragHandle>
         <div class="header jaded-text">
             {{cardHeaderText}}

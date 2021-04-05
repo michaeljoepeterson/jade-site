@@ -9,7 +9,13 @@ export class JadedDragCardComponent implements OnInit {
   @Input() cardHeaderText:string = "";
   @Input() size:string = "";
   @Input() customStyles:any = {};
+  @Input() cardClasses:any = {};
   @ViewChild('cardHeader') cardHeaderRef: ElementRef;
+  baseCardClasses:any = {
+    'jaded-card':true,
+    'jaded-border':true,
+    'jaded-background':true,
+  };
 
   @HostListener("window:resize",["event"])
   onResize(event:any){
@@ -30,7 +36,24 @@ export class JadedDragCardComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.initClasses(this.cardClasses);
+  }
 
+  initClasses(inputClasses:any){
+    this.cardClasses = {...this.baseCardClasses};
+    if(this.size === 'small'){
+      this.cardClasses['jaded-card-small'] = true;
+    }
+    else if(this.size === 'medium'){
+      this.cardClasses['jaded-card-medium'] = true;
+    }
+    else if(this.size === 'large'){
+      this.cardClasses['jaded-card-large'] = true;
+    }
+
+    for(let key in inputClasses){
+      this.cardClasses[key] = true;
+    }
   }
 
   ngAfterViewInit(){

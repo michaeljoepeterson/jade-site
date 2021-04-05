@@ -21,17 +21,20 @@
         </div>
     </div>
     <div class="row home-section inner-home-section" id="about">
-        <div class="col-lg-4 col-md-12 drag-container">
-            <app-jaded-drag-card [cardHeaderText]="'WELCOME.PNG'" size="large">
+        <div class="col-lg-4 col-md-12">
+            <app-jaded-drag-card [cardHeaderText]="'WELCOME.PNG'" size="large" [cardClasses]="{
+                'card':true,
+                'card-self':true
+            }">
                 <div>
                     <img class="jaded-img" src="assets/about/About_Correct_Colour.png">
                 </div>
             </app-jaded-drag-card>
         </div>
-        <div class="col-lg-8 col-md-12 drag-container">
-            <app-jaded-drag-card [cardHeaderText]="'WELCOME.PNG'" size="large" [customStyles]="{
-                'width':'75%',
-                'margin':'auto'
+        <div class="col-lg-8 col-md-12">
+            <app-jaded-drag-card [cardHeaderText]="'WELCOME.PNG'" [cardClasses]="{
+                'card':true,
+                'welcome-card':true
             }">
                 <div class="text-container">
                     <p class="jaded-para">Hi I'm Jade</p>

@@ -10,3 +10,22 @@
 .inner-home-section{
     padding-top: 10em;
 }
+
+::ng-deep .card{
+    position: relative;
+}
+
+::ng-deep .card-self{
+    left:4em;
+}
+
+::ng-deep .welcome-card{
+    width:75%;
+    margin:auto;
+}
+
+@media (max-width: 1080px) {
+    ::ng-deep .card{
+        position: static;
+    }
+}

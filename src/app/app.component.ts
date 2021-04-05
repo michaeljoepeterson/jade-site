@@ -1,6 +1,6 @@
-import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Subscription } from 'rxjs';
 import { swipe } from './animations/routeAnimations';
 import { AnimateService } from './services/animate.service';
 
@@ -15,20 +15,17 @@ import { AnimateService } from './services/animate.service';
 export class AppComponent {
   title = 'jaded';
   isAnimate:boolean = false;
+  animateSub:Subscription;
 
   constructor(
-    private animate:AnimateService,
-    private viewportScroller: ViewportScroller
+    private animate:AnimateService
   ){
 
   }
 
   ngOnInit(){
-    this.animate.routeChange.subscribe(animateStart => {
+    this.animateSub = this.animate.routeChange.subscribe(animateStart => {
       this.isAnimate = animateStart;
-      if(this.isAnimate){
-        this.viewportScroller.scrollToPosition([0,0]);
-      }
     });
   }
 
@@ -42,5 +39,14 @@ export class AppComponent {
 
   onAnimateEnd(event:any){
     this.animate.setRouteChange(false)
+  }
+
+  ngOnDestroy(){
+    try{
+      this.animateSub.unsubscribe();
+    }
+    catch(e){
+
+    }
   }
 }
