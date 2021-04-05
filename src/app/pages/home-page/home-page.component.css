@@ -1,5 +1,5 @@
 .home-section{
-    margin-bottom: 10em;
+    margin-bottom: 1em;
 }
 
 .button-container{
@@ -12,11 +12,29 @@
 }
 
 .inner-row{
-    padding-top: 5em;
+    padding-top: 3em;
 }
 
 ::ng-deep .card{
     position: relative;
+}
+
+::ng-deep .logo-pdf{
+    margin: auto;
+    width: 75%;
+    left: 5em;
+}
+
+::ng-deep .posters-pdf{
+    margin: auto;
+    width: 50%;
+    top: -10em;
+    left: 5em;
+}
+
+::ng-deep .illustration-pdf{
+    margin: auto;
+    left: 7em;
 }
 
 ::ng-deep .card-self{
@@ -36,6 +54,11 @@
     width:50%;
     margin:auto;
     top:-17em;
+}
+
+::ng-deep .gallery-card{
+    left: 4em;
+    margin: auto;
 }
 
 @media (max-width: 1080px) {

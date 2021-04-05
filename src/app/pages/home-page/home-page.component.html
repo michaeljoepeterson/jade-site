@@ -63,4 +63,57 @@
             </app-jaded-drag-card>
         </div>
     </div>
+    <div class="row home-section inner-row" ID="gallery">
+        <div class="col-lg-4 col-md-12">
+            <app-jaded-drag-card size="large" [cardHeaderText]="'GALLERY'" [cardClasses]="{
+                'card':true,
+                'gallery-card':true
+            }">
+                <div>
+                    <p>placeholder</p>
+                    <img class="jaded-img" src="assets/logos/MBSP.png">
+                </div>
+            </app-jaded-drag-card>
+        </div>
+        <div class="col-lg-6 col-md-12 inner-row">
+            <app-jaded-drag-card [cardHeaderText]="'LOGO.PDF'" [cardClasses]="{
+                'card':true,
+                'logo-pdf':true
+            }">
+                <div>
+                    <img class="jaded-img" src="assets/logos/Ruby_Solutions.png">
+                </div>
+            </app-jaded-drag-card>
+        </div>
+        <div class="col-lg-4 col-md-12 inner-row">
+            <app-jaded-drag-card [cardHeaderText]="'ILLUSTRATION.PDF'" size="large" [cardClasses]="{
+                'card':true,
+                'illustration-pdf':true
+            }">
+                <div>
+                    <img class="jaded-img" src="assets/illustrations/Comission_1.png">
+                </div>
+            </app-jaded-drag-card>
+        </div>
+        <div class="col-lg-8 col-md-12 inner-row">
+            <app-jaded-drag-card [cardHeaderText]="'POSTERS.PDF'" [cardClasses]="{
+                'card':true,
+                'posters-pdf':true
+            }">
+                <div>
+                    <img class="jaded-img" src="assets/posters/meatless_monday.png">
+                </div>
+            </app-jaded-drag-card>
+        </div>
+        <div class="col-lg-8 col-md-12 inner-row">
+            <app-jaded-drag-card [cardHeaderText]="'POSTERS.PDF'" [cardClasses]="{
+                'card':true,
+                'posters-pdf':true
+            }">
+                <div>
+                    <img class="jaded-img" src="assets/products/LLF.png">
+                </div>
+            </app-jaded-drag-card>
+        </div>
+    </div>
 </div>
