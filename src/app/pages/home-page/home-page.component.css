@@ -15,6 +15,16 @@
     padding-top: 3em;
 }
 
+.email-contact{
+    border-bottom: 2px dotted;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+}
+
 ::ng-deep .card{
     position: relative;
 }
