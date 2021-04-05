@@ -23,6 +23,7 @@
     margin: auto;
     width: 75%;
     left: 5em;
+    top: 4em;
 }
 
 ::ng-deep .posters-pdf{
@@ -59,6 +60,7 @@
 ::ng-deep .gallery-card{
     left: 4em;
     margin: auto;
+    top: 4em;
 }
 
 @media (max-width: 1080px) {

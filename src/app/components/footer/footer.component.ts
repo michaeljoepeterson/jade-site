@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private viewportScroller: ViewportScroller
+  ) { }
 
   ngOnInit(): void {
   }
 
+  homeClicked(event:any){
+    event.preventDefault();
+    this.viewportScroller.scrollToPosition([0,0]);
+  }
+
+  sectionClicked(section:string,event:any){
+    event.preventDefault();
+    this.viewportScroller.scrollToAnchor(section);
+  }
 }

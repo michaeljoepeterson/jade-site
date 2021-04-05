@@ -1,1 +1,27 @@
-<p>footer works!</p>
+<div class="footer">
+    <div>
+        <a class="logo" (click)="homeClicked($event)">
+            <img src="https://d33wubrfki0l68.cloudfront.net/ca0061c3c33c88b2b124e64ad341e15e2a17af49/c8765/images/alligator-logo3.svg" alt="jaded by logo"/>
+        </a>
+    </div>
+    <div >
+        <a class="footer-link" href="#">
+            Resume
+        </a>
+    </div>
+    <div>
+        <a class="footer-link" href="#" (click)="sectionClicked('about',$event)">
+            About
+        </a>
+    </div>
+    <div>
+        <a class="footer-link" href="#" (click)="sectionClicked('gallery',$event)">
+            Gallery
+        </a>
+    </div>
+    <div>
+        <a class="footer-link" href="#">
+            Contact
+        </a>
+    </div>
+</div>

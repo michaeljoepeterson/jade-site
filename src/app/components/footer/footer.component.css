@@ -1,0 +1,21 @@
+.footer{
+    display:flex;
+    width: 100%;
+    background-color: black;
+    padding: 1em;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-link{
+    color:white;
+}
+
+.footer-link:hover{
+    color:darkblue;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
