@@ -1,0 +1,37 @@
+::ng-deep .base-card{
+    width:75%;
+}
+
+::ng-deep .seanna-card{
+    top:2em;
+}
+
+::ng-deep .wedding-card{
+    top: -4em;
+}
+
+::ng-deep .mac-card{
+    top:-20em;
+    left: 30em;
+}
+
+::ng-deep .andi-card{
+    top: 10em;
+    left: 20em;
+}
+
+::ng-deep .carter-card{
+    top: 4em;
+    left: 5em;
+}
+
+::ng-deep .portrait-card{
+    left: 2em;
+    top: -10em;
+}
+
+::ng-deep .nick-card{
+    left: -2em;
+    top: 8em;
+}
+

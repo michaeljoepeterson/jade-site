@@ -88,14 +88,14 @@
             <app-jaded-drag-card [cardHeaderText]="'LOGO.PDF'" [cardClasses]="{
                 'card':true,
                 'logo-pdf':true
-            }" [linkTo]="'/logos'">
+            }" linkTo="/logos">
                 <div>
                     <img class="jaded-img" src="assets/logos/Ruby_Solutions.png">
                 </div>
             </app-jaded-drag-card>
         </div>
         <div class="col-lg-4 col-md-12 inner-row">
-            <app-jaded-drag-card [cardHeaderText]="'ILLUSTRATION.PDF'" size="large" [cardClasses]="{
+            <app-jaded-drag-card linkTo="/illustrations" [cardHeaderText]="'ILLUSTRATION.PDF'" size="large" [cardClasses]="{
                 'card':true,
                 'illustration-pdf':true
             }">
