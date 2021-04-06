@@ -68,3 +68,10 @@
     margin: auto;
     top: 4em;
 }
+
+.about-background{
+    background-image: url('/assets/BackHexGrey.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

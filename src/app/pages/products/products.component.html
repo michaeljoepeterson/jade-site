@@ -1,1 +1,56 @@
-<p>products works!</p>
+<div class="row">
+    <div class="col-lg-6 col-md-12">
+        <app-jaded-drag-card [cardHeaderText]="'PRODUCTS'" [cardClasses]="{
+            'card':true,
+            'description-card':true
+        }">
+            <div>
+                <p class="jaded-para description">
+                    I’ve been focusing a lot of energy into learning how to create product mockups and become more familiar with InDesign.
+                    I’ve helped format several books for publishing in InDesign as well as cover mockups and modelling in Adobe Dimension.
+                </p>
+            </div>
+        </app-jaded-drag-card>
+    </div>
+    <div class="col-lg-4 col-md-12 card-spacing">
+        <app-jaded-drag-card [cardHeaderText]="'DOLL.JPEG'" [cardClasses]="{
+            'card':true,
+            'doll-card':true,
+            'base-card':true
+        }">
+            <div>
+                <img class="jaded-img" src="assets/products/doll.png">
+            </div>
+        </app-jaded-drag-card>
+    </div>
+    <div class="col-lg-4 col-md-12 card-spacing">
+        <app-jaded-drag-card [cardHeaderText]="'SETTING_OUT.JPEG'" [cardClasses]="{
+            'card':true,
+            'out-card':true
+        }">
+            <div>
+                <img class="jaded-img" src="assets/products/setting_out.png">
+            </div>
+        </app-jaded-drag-card>
+    </div>
+    <div class="col-lg-4 col-md-12 card-spacing">
+        <app-jaded-drag-card [cardHeaderText]="'PIE.JPEG'" [cardClasses]="{
+            'card':true,
+            'pie-card':true
+        }">
+            <div>
+                <img class="jaded-img" src="assets/products/pie.png">
+            </div>
+        </app-jaded-drag-card>
+    </div>
+    <div class="col-lg-4 col-md-12 card-spacing">
+        <app-jaded-drag-card [cardHeaderText]="'PIZZA.JPEG'" [cardClasses]="{
+            'card':true,
+            'pizza-card':true
+        }">
+            <div>
+                <img class="jaded-img" src="assets/products/LLF.png">
+            </div>
+        </app-jaded-drag-card>
+    </div>
+</div>

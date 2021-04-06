@@ -1,0 +1,20 @@
+::ng-deep .base-card{
+    width:80%;
+}
+
+::ng-deep .doll-card{
+    top:-4em;
+}
+
+::ng-deep .out-card{
+    top:5em;
+}
+
+::ng-deep .pie-card{
+    top:-10em;
+    left: -5em;
+}
+
+::ng-deep .pizza-card{
+    top:-20em;
+}
