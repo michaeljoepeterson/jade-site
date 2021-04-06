@@ -1,4 +1,6 @@
+import { ViewportScroller } from '@angular/common';
 import { ChangeDetectorRef, Component, ElementRef, HostListener, Input, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-jaded-drag-card',
@@ -8,6 +10,7 @@ import { ChangeDetectorRef, Component, ElementRef, HostListener, Input, OnInit, 
 export class JadedDragCardComponent implements OnInit {
   @Input() cardHeaderText:string = "";
   @Input() size:string = "";
+  @Input() linkTo:string = null;
   @Input() customStyles:any = {};
   @Input() cardClasses:any = {};
   @ViewChild('cardHeader') cardHeaderRef: ElementRef;
@@ -17,6 +20,7 @@ export class JadedDragCardComponent implements OnInit {
     'jaded-background':true,
   };
 
+  hovered:boolean = false;
   @HostListener("window:resize",["event"])
   onResize(event:any){
     try{
@@ -32,7 +36,9 @@ export class JadedDragCardComponent implements OnInit {
   footerStyles:any = {};
 
   constructor(
-    private ref:ChangeDetectorRef
+    private ref:ChangeDetectorRef,
+    private router:Router,
+    private viewportScroller: ViewportScroller
   ) { }
 
   ngOnInit(): void {
@@ -67,4 +73,23 @@ export class JadedDragCardComponent implements OnInit {
     this.ref.detectChanges();
   }
 
+  linkToPage(){
+    if(this.linkTo){
+      this.router.navigate([this.linkTo]).then(resp => {
+        this.viewportScroller.scrollToPosition([0,0]);
+      });
+    }
+  }
+
+  enter(){
+    if(this.linkTo){
+      this.cardClasses['jaded-background-hover'] = true;
+      this.hovered = true;
+    }
+  }
+
+  exit(){
+    this.cardClasses['jaded-background-hover'] = false;
+    this.hovered = false;
+  }
 }

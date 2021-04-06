@@ -25,10 +25,6 @@
     padding: 4em;
 }
 
-::ng-deep .card{
-    position: relative;
-}
-
 ::ng-deep .logo-pdf{
     margin: auto;
     width: 75%;
@@ -71,10 +67,4 @@
     left: 4em;
     margin: auto;
     top: 4em;
-}
-
-@media (max-width: 1080px) {
-    ::ng-deep .card{
-        position: static;
-    }
 }

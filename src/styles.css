@@ -18,6 +18,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     background-color: #F5EEF6;
 }
 
+.jaded-background-hover{
+    background-color: green;
+}
+
 .jaded-img{
     width:100%;
 }
@@ -36,4 +40,18 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .drag-container{
     position: static;
+}
+
+.card{
+    position: relative;
+}
+
+.text-container > p{
+    font-size: 1.2em;
+}
+
+@media (max-width: 1080px) {
+    .card{
+        position: static;
+    }
 }

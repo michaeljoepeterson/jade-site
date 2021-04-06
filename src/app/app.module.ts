@@ -16,6 +16,10 @@ import { MatRippleModule } from '@angular/material/core';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { JadedIconButtonComponent } from './components/jaded-icon-button/jaded-icon-button.component';
 import { DetailsPageComponent } from './pages/details-page/details-page.component';
+import { ProductsComponent } from './pages/products/products.component';
+import { PostersComponent } from './pages/posters/posters.component';
+import { IllustrationsComponent } from './pages/illustrations/illustrations.component';
+import { LogosComponent } from './pages/logos/logos.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { DetailsPageComponent } from './pages/details-page/details-page.componen
     NavbarComponent,
     FooterComponent,
     JadedIconButtonComponent,
-    DetailsPageComponent
+    DetailsPageComponent,
+    ProductsComponent,
+    PostersComponent,
+    IllustrationsComponent,
+    LogosComponent
   ],
   imports: [
     BrowserModule,

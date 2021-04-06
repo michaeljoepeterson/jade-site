@@ -6,6 +6,12 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    transition: all 500ms;
+    opacity: 1;
+}
+
+.logo-container{
+    flex:0.1;
 }
 
 .footer-link{
@@ -18,4 +24,18 @@
 
 .logo:hover{
     cursor: pointer;
+}
+
+.footer-animate{
+    opacity: 0;
+}
+
+.logo > img{
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .logo-container{
+        flex:0.3;
+    }
 }

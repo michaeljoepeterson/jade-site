@@ -16,6 +16,10 @@
     margin-right: 0;
 }
 
+.jaded-icon > img{
+    width: 10%;
+}
+
 .home{
     color: white;
 }
@@ -27,4 +31,10 @@
 .animate-nav{
     position: initial !important;
     opacity: 0;
+}
+
+@media (max-width: 1024px) {
+    .jaded-icon > img{
+        width: 30%;
+    }
 }

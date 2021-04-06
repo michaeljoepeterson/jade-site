@@ -44,6 +44,10 @@
     margin-right: 5px;
 }
 
+.jaded-content-hover:hover{
+    cursor: pointer;
+}
+
 @media (max-width: 1080px) {
     .jaded-card-small{
         width:100%;

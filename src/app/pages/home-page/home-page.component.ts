@@ -18,7 +18,7 @@ export class HomePageComponent implements OnInit {
   }
 
   galleryClicked(event:any){
-    this.router.navigate(['/posters']);
+    this.viewportScroller.scrollToAnchor('gallery');
   }
 
   aboutClicked(event:any){

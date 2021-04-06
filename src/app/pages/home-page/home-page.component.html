@@ -23,7 +23,7 @@
     </div>
     <div class="row home-section inner-home-section" id="about">
         <div class="col-lg-4 col-md-12">
-            <app-jaded-drag-card [cardHeaderText]="'WELCOME.PNG'" size="large" [cardClasses]="{
+            <app-jaded-drag-card [cardHeaderText]="'SELF.PNG'" size="large" [cardClasses]="{
                 'card':true,
                 'card-self':true
             }">
@@ -33,12 +33,22 @@
             </app-jaded-drag-card>
         </div>
         <div class="col-lg-8 col-md-12 inner-row">
-            <app-jaded-drag-card [cardHeaderText]="'WELCOME.PNG'" [cardClasses]="{
+            <app-jaded-drag-card [cardHeaderText]="'ABOUT'" [cardClasses]="{
                 'card':true,
                 'welcome-card':true
             }">
                 <div class="text-container">
-                    <p class="jaded-para">Hi I'm Jade</p>
+                    <p>
+                        Hi, I’m Jade!
+                        I’m a self taught graphic artist based in Edmonton, Alberta.
+                    </p>
+                    <p>
+                        I’ve spent the last 10 years working as an executive chef, and pastry chef in restaurants worldwide while doing freelance design work on the side. 
+                        Recently I have decided to actively pursue a career in Graphic Design, and take a step back from my work in the culinary arts. 
+                    </p>
+                    <p class="jaded-para">
+                        I absolutely adore illustration, and spend most of my free time practicing and taking online courses to improve my skills. 
+                    </p>
                 </div>
             </app-jaded-drag-card>
         </div>
@@ -70,8 +80,7 @@
                 'gallery-card':true
             }">
                 <div>
-                    <p>placeholder</p>
-                    <img class="jaded-img" src="assets/logos/MBSP.png">
+                    <img class="jaded-img" src="assets/PlayButton.png">
                 </div>
             </app-jaded-drag-card>
         </div>
@@ -79,7 +88,7 @@
             <app-jaded-drag-card [cardHeaderText]="'LOGO.PDF'" [cardClasses]="{
                 'card':true,
                 'logo-pdf':true
-            }">
+            }" [linkTo]="'/logos'">
                 <div>
                     <img class="jaded-img" src="assets/logos/Ruby_Solutions.png">
                 </div>

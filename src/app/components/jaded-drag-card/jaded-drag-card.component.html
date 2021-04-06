@@ -15,7 +15,10 @@
             </app-jaded-icon-button>
         </div>
     </div>
-    <div class="jaded-card-content">
+    <div [ngClass]="{
+        'jaded-card-content':true,
+        'jaded-content-hover':hovered
+        }" (click)="linkToPage()" (mouseenter)="enter()" (mouseout)="exit()">
         <ng-content></ng-content>
     </div>
     <div class="jaded-card-footer" [ngStyle]="footerStyles">
