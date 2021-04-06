@@ -8,29 +8,38 @@
 }
 
 ::ng-deep .base-card{
-    width:75%;
+    width:80%;
 }
 
-::ng-deep .laila-card{
-    margin: auto;
+::ng-deep .soup-card{
+    left: 2em;
+    top: -4em;
 }
 
-::ng-deep .bear-card{
-    margin: auto;
-    top: -40em;
+
+::ng-deep .choco-card{
+    left:7em;
+    top: -25em;
 }
 
-::ng-deep .fork-card{
-    top: -30em;
+::ng-deep .quiver-card{
+    left: 5em;
+    top: -8em;
 }
 
-::ng-deep .cozy-card{
+::ng-deep .ruby-card{
+    top: -15em;
+    left: 10em;
+}
+
+
+::ng-deep .wreath-card{
+    top: -20em;
+    left: 20em;
+}
+
+
+::ng-deep .snack-card{
     top: -20em;
     left: -4em;
-}
-
-
-::ng-deep .jordie-card{
-    top: -50em;
-    left: 5em;
 }

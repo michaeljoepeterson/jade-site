@@ -1,0 +1,36 @@
+.card-spacing{
+    padding-top: 3em;
+}
+
+.description{
+    padding: 2em;
+    font-size: 1.2em;
+}
+
+::ng-deep .base-card{
+    width:75%;
+}
+
+::ng-deep .laila-card{
+    margin: auto;
+}
+
+::ng-deep .bear-card{
+    margin: auto;
+    top: -40em;
+}
+
+::ng-deep .fork-card{
+    top: -30em;
+}
+
+::ng-deep .cozy-card{
+    top: -20em;
+    left: -4em;
+}
+
+
+::ng-deep .jordie-card{
+    top: -50em;
+    left: 5em;
+}
