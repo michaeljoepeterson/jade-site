@@ -4,13 +4,13 @@
             {{cardHeaderText}}
         </div>
         <div class="controls">
-            <app-jaded-icon-button>
+            <app-jaded-icon-button [customStyles]="hovered ? hoveredButtonStyles : {}">
                 <mat-icon>minimize</mat-icon>
             </app-jaded-icon-button>
-            <app-jaded-icon-button>
+            <app-jaded-icon-button [customStyles]="hovered ? hoveredButtonStyles : {}">
                 <mat-icon>crop_square</mat-icon>
             </app-jaded-icon-button>
-            <app-jaded-icon-button>
+            <app-jaded-icon-button [customStyles]="hovered ? hoveredButtonStyles : {}">
                 <mat-icon>close</mat-icon>
             </app-jaded-icon-button>
         </div>

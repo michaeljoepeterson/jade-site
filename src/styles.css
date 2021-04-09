@@ -7,7 +7,7 @@ html, body {
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .jaded-border-color,.jaded-border{
-    border: 5px solid #E09F94 !important;
+    border: 5px solid #E09F94;
 }
 
 .jaded-border{

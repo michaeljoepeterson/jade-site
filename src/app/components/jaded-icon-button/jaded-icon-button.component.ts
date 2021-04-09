@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-jaded-icon-button',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./jaded-icon-button.component.css']
 })
 export class JadedIconButtonComponent implements OnInit {
+  @Input() customStyles:any = {};
 
   constructor() { }
 

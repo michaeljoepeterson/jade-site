@@ -1,6 +1,6 @@
 .jaded-button-border{
     border-radius: 10% !important;
-    border: 3px solid #E09F94 !important;
+    border: 3px solid #E09F94;
 }
 
 .jaded-icon-button{
@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: center;
     color: #E09F94;
+    transition: all 500ms;
 }
 
 .jaded-icon-background{

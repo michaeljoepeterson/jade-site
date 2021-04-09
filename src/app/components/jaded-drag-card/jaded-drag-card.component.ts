@@ -21,6 +21,12 @@ export class JadedDragCardComponent implements OnInit {
   };
 
   hovered:boolean = false;
+  hoveredButtonStyles:any = {
+    color:'white',
+    backgroundColor:'#3C7152',
+    borderColor:'white'
+  };
+
   @HostListener("window:resize",["event"])
   onResize(event:any){
     try{
