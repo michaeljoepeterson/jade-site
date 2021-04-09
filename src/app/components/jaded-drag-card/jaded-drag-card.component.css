@@ -10,7 +10,21 @@
 .jaded-card{
     z-index: 100;
     transform: translate3d(0px, 0px, 0px);
+    box-shadow: 0 8px 10px -5px rgb(0 0 0 / 20%), 0 16px 24px 2px rgb(0 0 0 / 14%), 0 6px 30px 5px rgb(0 0 0 / 12%)
 }
+
+.jaded-card.jaded-background-hover{
+    border-color: white !important;
+}
+
+.jaded-background-hover > .jaded-card-header-controls, .jaded-background-hover > .jaded-card-footer{
+    border-color: white;
+}
+
+.jaded-background-hover > .jaded-card-header-controls > .header{
+    color: white;
+}
+
 
 .jaded-card-header-controls:hover{
     cursor: move;
