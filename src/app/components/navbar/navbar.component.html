@@ -9,11 +9,11 @@
     </button> -->
     
     <div class="jade-nav-content">
-        <a class="navbar-brand jaded-icon" routerLink="/home">
+        <a class="navbar-brand jaded-icon" href="#" (click)="homeClicked($event)">
             <img src="assets/WholeLogoWhite.png" alt="jaded by logo"/>
         </a>
       <div>
-        <button mat-icon-button class="home" aria-label="home icon">
+        <button mat-icon-button class="home" aria-label="home icon" (click)="homeClicked($event)">
             <mat-icon class="home-icon">home</mat-icon>
         </button>
       </div>

@@ -24,4 +24,8 @@ export class HomePageComponent implements OnInit {
   aboutClicked(event:any){
     this.viewportScroller.scrollToAnchor('about');
   }
+
+  sectionClicked(section:string){
+    this.viewportScroller.scrollToAnchor(section);
+  }
 }

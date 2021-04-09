@@ -1,4 +1,6 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { AnimateService } from '../../services/animate.service';
 
@@ -12,7 +14,9 @@ export class NavbarComponent implements OnInit {
   animateSub:Subscription;
 
   constructor(
-    private animate:AnimateService
+    private animate:AnimateService,
+    private viewportScroller: ViewportScroller,
+    private router:Router
   ) { }
 
   ngOnInit(): void {
@@ -23,6 +27,12 @@ export class NavbarComponent implements OnInit {
 
   onAnimate(event:any){
     console.log(event);
+  }
+
+  homeClicked(event:any){
+    event.preventDefault();
+    this.router.navigate(['/']);
+    this.viewportScroller.scrollToPosition([0,0]);
   }
 
   ngOnDestroy(){

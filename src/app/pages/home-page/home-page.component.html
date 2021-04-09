@@ -14,10 +14,13 @@
         </div>
         <div class="col-lg-6 col-md-12 drag-container">
             <div class='button-container'>
-                <app-jaded-button buttonText="About" (clicked)="aboutClicked($event)"></app-jaded-button>
+                <app-jaded-button buttonText="About" (clicked)="sectionClicked('about')"></app-jaded-button>
             </div>
             <div class='button-container'>
-                <app-jaded-button buttonText="Gallery" (clicked)="galleryClicked($event)"></app-jaded-button>
+                <app-jaded-button buttonText="Gallery" (clicked)="sectionClicked('gallery')"></app-jaded-button>
+            </div>
+            <div class='button-container'>
+                <app-jaded-button buttonText="Contact" (clicked)="sectionClicked('contact')"></app-jaded-button>
             </div>
         </div>
     </div>
